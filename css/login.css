@@ -1,0 +1,266 @@
+body {
+    position: relative;
+    min-width: 600px;
+    background-color: rgb(255, 245, 235);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 70px;
+}
+
+
+/* 固定盒子 */
+
+main {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #5bb8c1;
+    margin: 140px auto;
+    /* filter: drop-shadow(3px 3px 2px rgba(123, 123, 123, .1)); */
+    border-radius: 6px;
+}
+
+.login-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 300px;
+    background: url(../images/zuoxiong.png);
+    background-repeat: no-repeat;
+    background-position: 75px 30px;
+    background-size: 110px;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+}
+
+.register-btn {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    width: 250px;
+    height: 300px;
+    background: url(../images/youxiong.png);
+    background-repeat: no-repeat;
+    background-position: 90px 30px;
+    background-size: 110px;
+}
+
+.register-btn:hover {
+    cursor: pointer;
+}
+
+.login-text {
+    position: absolute;
+    bottom: 35px;
+    left: 100px;
+    width: 50px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 146, 47);
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 2px rgba(123, 123, 123, .2));
+}
+
+.register-text {
+    position: absolute;
+    bottom: 35px;
+    right: 90px;
+    width: 50px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 146, 47);
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 2px rgba(123, 123, 123, .2));
+}
+
+
+/* 登录盒子 */
+
+.login-box {
+    opacity: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 120px;
+    top: -50px;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(125, 144, 236);
+    border-radius: 10px;
+    filter: drop-shadow(4px 3px 3px rgba(123, 123, 123, .5));
+}
+
+.login-box span {
+    margin-top: 70px;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.login-box span:hover {
+    cursor: pointer;
+}
+
+.login-box input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none !important;
+    color: rgb(205, 73, 66);
+    border: solid 1px rgb(205, 73, 66);
+    transition: .3s;
+    filter: drop-shadow(5px 5px 3px rgba(123, 123, 123, 0.2));
+}
+
+.login-box button {
+    margin: auto 10px;
+    width: 40px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(228, 146, 47);
+    color: rgb(255, 255, 255);
+}
+
+.login-box button:hover {
+    cursor: pointer;
+}
+
+
+/* 微信qq */
+
+.login-box .wx {
+    box-sizing: border-box;
+    padding: 1px;
+    display: block;
+    position: absolute;
+    left: 138px;
+    bottom: 50px;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 4px;
+}
+
+.login-box .qq {
+    box-sizing: border-box;
+    padding: 2px;
+    display: block;
+    position: absolute;
+    left: 180px;
+    bottom: 50px;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 4px;
+}
+
+.login-box .line {
+    box-sizing: border-box;
+    color: rgb(250, 250, 250, .7);
+    padding-top: 2px;
+    font-size: 13px;
+    margin: 50px auto;
+    width: 150px;
+    height: 20px;
+    border-bottom: solid 1px rgba(250, 250, 250, .5);
+}
+
+
+/* 注册盒子 */
+
+.register-box {
+    opacity: 0;
+    box-sizing: border-box;
+    position: absolute;
+    right: 120px;
+    top: -50px;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(125, 144, 236);
+    border-radius: 10px;
+    filter: drop-shadow(4px 3px 3px rgba(123, 123, 123, .5));
+}
+
+.register-box span {
+    margin-top: 60px;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.register-box span:hover {
+    cursor: pointer;
+}
+
+.register-box input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.register-box button:last-child {
+    margin: auto 10px;
+    width: 40px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(228, 146, 47);
+    color: rgb(255, 255, 255);
+}
+
+.register-box button:last-child:hover {
+    cursor: pointer;
+}
+
+.fasong {
+    margin: auto 10px;
+    width: 80px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(228, 146, 47);
+    color: rgb(255, 255, 255);
+}
+
+.fasong:hover {
+    cursor: pointer;
+}

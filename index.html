@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>仿csdn</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta name="keywords" content="资源分享,免费资源,技术交流">
+  <meta name="description" content="资源分享,免费资源,技术交流">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/other.css">
+  <link rel="shortcut icon" href="images/icon1.ico">
+  <script defer src="js/index_js.js"></script>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header>
+    <!-- logo盒子 -->
+    <div class="header-logo-container">
+      <a href="index.html" id="logo-a">
+        <img src="images/logo.png" title="有点资源网首页" class="logo">
+      </a>
+    </div>
+    <!-- 内容导航 -->
+    <ul class="header-nav-main">
+      <a href="video.html" title="最新高清影视、电影" target="_blank" class="header-nav-main--list">影视</a>
+      <a href="Apps.html" title="xxxxxxx" target="_blank" class="header-nav-main--list">Apps</a>
+      <a href="internet.html" title="xxxxx" target="_blank" class="header-nav-main--list">网课</a>
+      <a href="download.html" title="快速磁链下载与神器" target="_blank" class="header-nav-main--list">下载</a>
+      <a href="" target="_self" class="header-nav-main--list">其他</a>
+      <div class="other">
+        <a href="" class="other-list">设计网课</a>
+        <a href="" class="other-list">图片素材</a>
+        <a href="" class="other-list">电子书网</a>
+        <a href="" class="other-list">英语学习</a>
+      </div>
+      <img src="images/close.png" class="close1">
+    </ul>
+    <!-- 搜索框 -->
+    <div class="header-search">
+      <input type="text" class="header-search-input" placeholder="请输入您想搜索的内容">
+      <!-- js注册事件 -->
+      <a href="#">
+        <img src="images/fangdajing.png" title="点击搜索精彩内容">
+      </a>
+    </div>
+    <!-- 用户快捷功能 -->
+    <div class="header-nav-user">
+      <a href="#" title="与其他会员在论坛里交流吧" class="header-nav-user-list">会员中心</a>
+      <a href="#" title="你到过的地方我都记得哦" class="header-nav-user-list">足迹</a>
+      <a href="#" title="最近发生了什么呢" class="header-nav-user-list">动态</a>
+      <a href="#" class="header-nav-user-list">消息</a>
+    </div>
+    <!-- 用户头像 -->
+    <div class="header-user">
+      <a href="login.html" class="header-user-a"><img class="header-user-image" src="images/user.jpg"></a>
+      <div class="user-box">
+
+        <a href=""><span class="user-name">用户名</span></a>
+        <a href="">
+          <li class="user-list">个人中心</li>
+        </a>
+        <a href="">
+          <li class="user-list">内容管理</li>
+        </a>
+        <a href="">
+          <li class="user-list">我的收藏</li>
+        </a>
+        <a href="">
+          <li class="user-list">我的订单</li>
+        </a>
+        <a href="">
+          <li class="user-list">我的认证</li>
+        </a>
+        <a href="">
+          <li class="user-list" id="last-child">退出登录</li>
+        </a>
+
+      </div>
+    </div>
+    <!-- 上传功能块 -->
+    <div class="header-upload">
+      <a href="" title="点击上传内容">
+        <img src="images/shangchuan.png" class="header-upload-icon">
+      </a>
+    </div>
+  </header>
+  <!-- 主体 -->
+  <main>
+    <!-- 可变盒子上 -->
+    <div class="top-box">
+      <img src="images/top-point.png" class="top-point">
+      <li class="list"><a href="">软件</a></li>
+      <li class="list"><a href="">高考</a></li>
+      <li class="list"><a href="">历史</a></li>
+      <li class="list"><a href="">研究生</a></li>
+      <li class="list"><a href="">编程</a></li>
+      <li class="list"><a href="">核心开发</a></li>
+      <li class="list"><a href="">言论</a></li>
+      <li class="list"><a href="">英语</a></li>
+      <li class="list"><a href="">分时</a></li>
+      <li class="list"><a href="">计算机</a></li>
+      <li class="list"><a href="">开源</a></li>
+      <li class="list"><a href="">深度学习</a></li>
+      <li class="list"><a href="">人工智能</a></li>
+      <li class="list"><a href="">程序员</a></li>
+      <li class="list"><a href="">影视片</a></li>
+      <li class="list"><a href="">学生</a></li>
+      <li class="list"><a href="">Object</a></li>
+      <li class="list"><a href="">Java</a></li>
+      <li class="list"><a href="">云平台</a></li>
+      <li class="list"><a href="">操作系统</a></li>
+      <li class="list"><a href="">软件</a></li>
+      <li class="list"><a href="">高考</a></li>
+      <li class="list"><a href="">历史</a></li>
+      <li class="list"><a href="">研究生</a></li>
+      <li class="list"><a href="">编程</a></li>
+      <li class="list"><a href="">核心开发</a></li>
+      <li class="list"><a href="">言论</a></li>
+      <li class="list"><a href="">英语</a></li>
+      <li class="list"><a href="">分时</a></li>
+      <li class="list"><a href="">计算机</a></li>
+      <li class="list"><a href="">开源</a></li>
+      <li class="list"><a href="">深度学习</a></li>
+      <li class="list"><a href="">人工智能</a></li>
+      <li class="list"><a href="">程序员</a></li>
+      <li class="list"><a href="">影视片</a></li>
+      <li class="list"><a href="">学生</a></li>
+      <li class="list"><a href="">Object</a></li>
+      <li class="list"><a href="">Java</a></li>
+      <li class="list"><a href="">云平台</a></li>
+      <li class="list"><a href="">操作系统</a></li>
+    </div>
+
+    <!-- 左边轮播图 -->
+    <div class="carousel">
+      <li class="img" index="0"><img src="images/lunbo1.png"></li>
+      <li class="img" index="1"><img src="images/lunbo2.png"></li>
+      <li class="img" index="2"><img src="images/lunbo3.png"></li>
+    </div>
+    <div class="point1"></div>
+    <div class="point2"></div>
+    <!-- ----------------- -->
+    <!-- 主要的内容盒子2个 -->
+    <div class="text1">
+      <div class="text1-list">
+        <a href=""><span class="h">Ubuntu Unity桌面6年后起死回生</span></a>
+        <a href=""><span class="span">12岁印度少年出手</span></a>
+      </div>
+      <div class="text1-list">
+        <a href=""><span class="h">苹果让iphone"挤牙膏",是因为...</span></a>
+        <a href=""><span class="span">一年半时间内,推出五款Mac芯片</span></a>
+      </div>
+      <div class="text1-list">
+        <a href=""><span class="h">JetBrains全家桶涨价!</span></a>
+        <a href=""><span class="span">intelliJ IDEA、.NET工具变贵</span></a>
+      </div>
+      <div class="text1-list">
+        <a href=""><span class="h">国产数据库乱象</span></a>
+        <a href=""><span class="span">基于开源而缺乏自主研发</span></a>
+      </div>
+      <div class="text1-list">
+        <a href=""><span class="h">事半功倍的Flutter小技巧分享</span></a>
+        <a href=""><span class="span">ListView 和 PageView 的各种花式嵌套</span></a>
+      </div>
+    </div>
+    <div class="left-p-1"></div>
+    <div class="right-p-1"></div>
+
+    <div class="text2">
+      <div class="text2-list">
+        <a href=""><span class="h">2022开放原子全球元丰会报名</span></a>
+        <a href=""><span class="span">开源不仅仅是一种技术，更是一种引...</span></a>
+      </div>
+      <div class="text2-list">
+        <a href=""> <span class="h">历史上的今天:Google之母出生</span></a>
+        <a href=""><span class="span">同一天诞生的两位图灵奖先驱</span></a>
+      </div>
+      <div class="text2-list">
+        <a href=""><span class="h">漏洞赏金平台出"内鬼"</span></a>
+        <a href=""><span class="span">偷窃他人漏洞报告变卖变成副业</span></a>
+      </div>
+      <div class="text2-list">
+        <a href=""><span class="h">成为程序员的你</span></a>
+        <a href=""><span class="span">无论是成为大神、技术极客、工程人...</span></a>
+      </div>
+      <div class="text2-list">
+        <a href=""> <span class="h">开源，科学院在行动</span></a>
+        <a href=""><span class="span">ListView 和 PageView 的各种花式嵌套</span></a>
+      </div>
+    </div>
+    <div class="left-p-2"></div>
+    <div class="right-p-2"></div>
+    <!-- ------------------------ -->
+
+    <!-- 广告模块（可点击关闭） -->
+    <div class="ad">
+      <a href=""> <img src="images/ad.png"></a>
+    </div>
+    <!-- 关闭后显示的 -->
+    <div href="" class="ad-more">
+      <div>
+        <h3>有点网已经为您关闭广告</h3>
+        <a href="">使用app,永久免费无广告</a>
+      </div>
+    </div>
+    <!-- 关闭按钮 -->
+    <div class="ad-close"></div>
+    <!-- 悬浮窗模块 -->
+
+    <div class="erweima">
+      <a href="" title="扫码开启更多功能"></a>
+      <div class="erweima-bar">
+        <img src="images/erweima.jpg" alt="">
+        <div>扫码关注获取更多信息</div>
+      </div>
+    </div>
+
+    <div class="kefu">
+      <a href="" title="点击进入客服中心"></a>
+    </div>
+    <div class="kefu-bar">
+      <div><a href="">客服中心</a></div>
+      <li><a href="">为什么资料无法上传？</a></li>
+      <li><a href="">作者是哪里人？</a></li>
+      <li><a href="">程序员真的会掉头发吗？</a></li>
+      <li><a href="">工地的砖真的烫手吗？</a></li>
+    </div>
+
+    <!-- -------------------- -->
+
+    <!-- 横条广告 -->
+    <div class="ad-row">
+      <img src="images/guanggaoheng.jpg">
+    </div>
+  </main>
+  <!-- 其他区域 -->
+  <div class="comment">
+    <div class="comment-nav">
+      <a href="">
+        <li class="comment-nav-list">关注</li>
+      </a>
+      <div class="list-more">你的关注
+        <div class="three"></div>
+      </div>
+      <a href="">
+        <li class="comment-nav-list">推荐</li>
+      </a>
+      <div class="list-more">为你独家定制
+        <div class="three"></div>
+      </div>
+      <a href="">
+        <li class="comment-nav-list">资讯</li>
+      </a>
+      <div class="list-more">前沿IT资讯
+        <div class="three"></div>
+      </div>
+      <a href="">
+        <li class="comment-nav-list">热榜</li>
+      </a>
+      <div class="list-more">全站热门内容
+        <div class="three"></div>
+      </div>
+      <a href="">
+        <li class="comment-nav-list">专家推荐</li>
+      </a>
+      <div class="list-more">专家为你甄选
+        <div class="three"></div>
+      </div>
+      <a href="">
+        <li class="comment-nav-more">更多</li>
+      </a>
+      <a href="">
+        <img src="images/gengduojiantou.png">
+      </a>
+    </div>
+    <div class="talk">
+      <div class="talk-list">
+        <span>等你来答</span>
+        <h4>求解决一道c++ prim算法的题</h4>
+        <div class="retalk">
+          <img src="images/dianzan.png" class="small-img">
+          <span>12赞</span>
+          <img src="images/cai.png" class="small-img">
+          <span>1踩</span>
+          <span>@苏苏</span>
+        </div>
+      </div>
+      <div class="talk-list">
+        <h4>mybatis自定义枚举类型的转换器以及各种使用场景</h4>
+        <div class="big-retalk">
+          <img src="images/daimajietu.jpg" class="big-img">
+          <span>mybatis自定义枚举类型的转换器以及各种使用场景</span>
+          <div class="retalk">
+            <img src="images/dianzan.png" class="small-img">
+            <span>12赞</span>
+            <img src="images/cai.png" class="small-img">
+            <span>1踩</span>
+            <span>@苏苏...</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-list">
+        <h4>牛客前端宝典——刷题##Day2</h4>
+        <div class="big-retalk">
+          <img src="images/nv.png" class="big-img">
+          <span>加油刷题鸭</span>
+          <div class="retalk">
+            <img src="images/dianzan.png" class="small-img">
+            <span>65赞</span>
+            <img src="images/cai.png" class="small-img">
+            <span>0踩</span>
+            <span>@练习时长两年半的...</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-list">
+        <h4>【Spring】Spring的创建和 使用手术刀剖析</h4>
+        <div class="big-retalk">
+          <img src="images/spring.png " class="big-img">
+          <span>详细讲解Sping的创建与使用以及面试题</span>
+          <div class="retalk">
+            <img src="images/dianzan.png" class="small-img">
+            <span>12赞</span>
+            <img src="images/cai.png" class="small-img">
+            <span>1踩</span>
+            <span>@咕嘟咕嘟说</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-nav">
+    <a href="">
+      <h3>向你推荐</h3>
+    </a>
+    <div class="right-nav-box">
+      <a href="">
+        <img src="images/shuye.png" alt="">
+        <li class="right-nav-list">C站免费[学+练]产品</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+      <a href="">
+        <img src="images/wenjian.png" alt="">
+        <li class="right-nav-list">CSDN指数</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+      <a href="">
+        <img src="images/shijian.png" alt="">
+        <li class="right-nav-list">让学习更有价值</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+      <a href="">
+        <img src="images/huodong.png" alt="">
+        <li class="right-nav-list">[笔耕不缀]专属勋章活动</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+      <a href="">
+        <img src="images/wenda.png" alt="">
+        <li class="right-nav-list">回答冲榜瓜分千元奖金</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+      <a href="">
+        <img src="images/yun.png" alt="">
+        <li class="right-nav-list">云原生系列在线峰会</li>
+        <img src="images/gengduojiantou.png" class="right-nav-point">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="right-live">
+    <a href="" class="live-header">
+      <img src="images/zhibo.png" alt="">
+      <h3>直播</h3>
+      <span>更多</span>
+      <img src="images/gengduojiantou.png" alt="">
+    </a>
+
+    <a href="" class="live-box">
+      <img src="images/zhiboxiaobiao.png" class="live-small-img ">
+      <span class="live-small-text">直播预约</span>
+      <div class="img-mask"><img src="images/zhezhao.png"></div>
+      <div class="live-img live-img1"></div>
+      <span class="live-introduce">解码[湖上建仓]</span>
+      <span class="live-time">07/13 19:30</span>
+    </a>
+    <a href="" class="live-box">
+      <img src="images/zhiboxiaobiao.png" class="live-small-img live-small-img2">
+      <span class="live-small-text">直播预约</span>
+      <div class="img-mask"><img src="images/zhezhao.png"></div>
+      <div class="live-img live-img2"></div>
+      <span class="live-introduce">揭秘出海爆款新物种背后的黑科技</span>
+      <span class="live-time">07/30 14:00</span>
+    </a>
+    <a href="" class="live-box">
+      <img src="images/zhiboxiaobiao.png" class="live-small-img live-small-img3">
+      <span class="live-small-text">直播预约</span>
+      <div class="img-mask"><img src="images/zhezhao.png"></div>
+      <div class="live-img live-img3"></div>
+      <span class="live-introduce">[技术博客月]:开发者社区运营是怎么样一个...</span>
+      <span class="live-time">07/13 20:00</span>
+    </a>
+    <a href="" class="live-box">
+      <img src="images/zhiboxiaobiao.png" class="live-small-img live-small-img4">
+      <span class="live-small-text">直播预约</span>
+      <div class="img-mask"><img src="images/zhezhao.png"></div>
+      <div class="live-img live-img4"></div>
+      <span class="live-introduce">[技术博客月]:未来我们还需要浏览器吗？</span>
+      <span class="live-time">07/14 20:00</span>
+    </a>
+
+  </div>
+  <div class="copy">
+    <span>联系我们qq:2146508650&nbsp;</span>
+    <span>联系我们邮箱:2146508650@qq.com</span>
+    <div>发现bug可以反馈给以上联系方式,网站持续更新</div>
+    <div>本站借鉴参考https://www.csdn.net/,仅用于学习交流</div>
+  </div>
+
+</body>
+
+
+</html

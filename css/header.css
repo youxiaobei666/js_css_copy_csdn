@@ -1,0 +1,298 @@
+/* 默认----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    min-width: 1192px;
+    height: 1700px;
+    background-color: rgb(250, 250, 250);
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*------ 默认 */
+
+
+/* header头部开始----- */
+
+body header {
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 24px;
+    display: flex;
+    /* position: fixed; */
+    /* 垂直居中 */
+    align-items: center;
+    flex-direction: row;
+    /* 设置随视口变化的的宽度 */
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    filter: drop-shadow(3px 3px 3px rgba(123, 123, 123, .1));
+}
+
+
+/* logo----- */
+
+.header-logo-container {
+    position: relative;
+    width: 100px;
+    height: 60px;
+}
+
+.header-logo-container .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
+
+
+/* -----logo */
+
+
+/* 资源导航----- */
+
+.header-nav-main {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+    width: 375px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.header-nav-main .close1 {
+    position: absolute;
+    left: 493px;
+    top: 235px;
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.header-nav-main--list {
+    flex: 1;
+    float: left;
+    text-align: center;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.other {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 438px;
+    flex-direction: column;
+    width: 80px;
+    height: 200px;
+}
+
+.other a {
+    color: #3d3d3d;
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(123, 123, 123, 0.1);
+    filter: drop-shadow(3px 3px 3px rgba(123, 123, 123, .1));
+}
+
+.other a:last-child {
+    border-radius: 0 0 10% 10%;
+}
+
+.other a:first-child {
+    border-radius: 10% 10% 0 0;
+}
+
+.other a:hover {
+    color: #ffffff;
+}
+
+
+/* -----资源导航 */
+
+
+/* 搜索框----- */
+
+.header-search {
+    position: relative;
+    flex: 1;
+    margin: 0 20px;
+    line-height: 60px;
+    height: 60px;
+}
+
+.header-search-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    height: 33px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border-radius: 35px;
+    border: 1px solid #e8e8ed;
+    background-color: #f5f6f7;
+}
+
+input[type="text"]:focus {
+    outline: none !important;
+    color: #7f57db;
+    border: solid 1px #7f57db;
+    transition: .3s;
+    filter: drop-shadow(5px 5px 3px rgba(123, 123, 123, 0.2));
+}
+
+.header-search img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 20px;
+}
+
+
+/* -----搜索框 */
+
+
+/* 用户功能导航----- */
+
+.header-nav-user {
+    width: 300px;
+    display: flex;
+    line-height: 60px;
+    height: 60px;
+}
+
+.header-nav-user-list {
+    color: #3d3d3d;
+    flex: 1;
+    float: left;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.header-nav-user-list:first-child {
+    /* 设置火焰图片 背景图法 */
+    flex: 1.5;
+    background: url(../images/fire.png) no-repeat;
+    background-size: 17px 20px;
+    background-position: 82px 20px;
+}
+
+
+/* -----用户功能导航 */
+
+
+/* 用户头像导航----- */
+
+.header-user {
+    position: relative;
+    width: 80px;
+    height: 60px;
+}
+
+.header-user-image {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    display: block;
+    margin: 15px auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* border: solid .5px rgba(255, 255, 255, .6); */
+}
+
+.user-box {
+    display: none;
+    position: absolute;
+    left: -33px;
+    top: 55px;
+    width: 150px;
+    height: 400px;
+    filter: drop-shadow(3px 3px 3px rgba(123, 123, 123, .1));
+}
+
+.user-box .user-name {
+    color: #3d3d3d;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(123, 123, 123, 0.1);
+}
+
+.user-box .user-list {
+    color: #3d3d3d;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(123, 123, 123, 0.1);
+    text-align: center;
+    line-height: 50px;
+}
+
+#last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.user-box .user-name {
+    border-radius: 10px 10px 0 0;
+    border-top: solid 1px rgba(123, 123, 123, 0.2);
+}
+
+
+/* -----用户头像导航 */
+
+
+/* 上传功能导航----- */
+
+.header-upload {
+    position: relative;
+    width: 50px;
+    height: 60px;
+}
+
+.header-upload img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+}
+
+
+/* 上传功能导航 */
+
+
+/* ------header头部结束 */
