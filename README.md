@@ -1,4 +1,2 @@
-# csdn
-# js_css_copy_csdn
-# js_css_copy_csdn
-# js_css_copy_csdn
+# 仿制 csdn 的首页完成 js 动效，和 css 样式
+
